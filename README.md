@@ -1,2 +1,2 @@
 # javascript-tools
-Collection of useful Javascript tools and snippets.
+Useful Javascript tools and snippets
