@@ -21,4 +21,5 @@ function debounce(func, wait, immediate) {
 var myEfficientFn = debounce(function() {
 	// All the taxing stuff you do
 }, 250);
+
 window.addEventListener('resize', myEfficientFn);
