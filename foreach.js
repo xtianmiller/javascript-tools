@@ -12,3 +12,24 @@ var forEach = function(collection, callback, scope) {
         }
     }
 };
+
+// Usage
+
+// Array:
+forEach(['A', 'B', 'C', 'D'], function (value, index) {
+    console.log(value); // A, B, C, D
+    console.log(index); // 0, 1, 2, 3
+});
+
+// NodeList:
+forEach(document.querySelectorAll('div'), function (value, index) {
+    console.log(value); // <div>, <div>, <div>...
+    console.log(index); // 0, 1, 2...
+});
+
+// Object:
+forEach({ name: 'Todd', location: 'UK' }, function (value, prop, obj) {
+    console.log(value); // Todd, UK
+    console.log(prop); // name, location
+    console.log(obj); // { name: 'Todd', location: 'UK' }, { name: 'Todd', location: 'UK' }
+});
